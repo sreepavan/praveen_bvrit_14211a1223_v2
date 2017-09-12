@@ -20,13 +20,9 @@ public class StudentGroup implements StudentArrayOperation {
 	 * @param length
 	 */
 	public StudentGroup(int length) {
-		if(students.length<0 || students==null)
-		{
-			throw new IllegalArgumentException();
-		}
-		else {
+		
 		this.students = new Student[length];
-		}
+		
 	}
 
 	@Override

@@ -20,37 +20,74 @@ public class StudentGroup implements StudentArrayOperation {
 	 * @param length
 	 */
 	public StudentGroup(int length) {
+		if(students.length<0 || students==null)
+		{
+			throw new IllegalArgumentException();
+		}
+		else {
 		this.students = new Student[length];
+		}
 	}
 
 	@Override
 	public Student[] getStudents() {
 		// Add your implementation here
-		
+		if(students.length<0 || students==null)
+		{
+			throw new IllegalArgumentException();
+		}
+		else {
 		return students;
+		}
 	}
 
 	@Override
 	public void setStudents(Student[] students) {
 		// Add your implementation here
+		if(students.length<0 || students==null)
+		{
+			throw new IllegalArgumentException();
+		}
+		else {
 		this.students=students;
+		}
 	}
 
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
-		return students[index];
+		if(index>students.length || students==null)
+		{
+			throw new IllegalArgumentException();
+		}
+		else {
+			return students[index];
+		}
 	}
 
 	@Override
 	public void setStudent(Student student, int index) {
 		// Add your implementation here
+		if(index>students.length || students==null )
+		{
+			throw new IllegalArgumentException();
+		}
+		else {
 		students[index]=student;
+		}
 	}
 
 	@Override
 	public void addFirst(Student student) {
 		// Add your implementation here
+		if(students.length<0 || students==null)
+		{
+			throw new IllegalArgumentException();
+		}
+		else {
+			
+		}
+		
 	}
 
 	@Override
@@ -66,7 +103,8 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void remove(int index) {
 		// Add your implementation here
-		students[index]=null;
+		//students.remove(students[index]);
+		
 		///////<--
 	}
 

@@ -45,7 +45,6 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void setStudent(Student student, int index) {
 		// Add your implementation here
-		students[index]=student;
 	}
 
 	@Override
@@ -66,9 +65,6 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void remove(int index) {
 		// Add your implementation here
-		//students.remove(students[index]);
-		
-		///////<--
 	}
 
 	@Override

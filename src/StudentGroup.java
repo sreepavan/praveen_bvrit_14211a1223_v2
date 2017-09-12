@@ -20,21 +20,14 @@ public class StudentGroup implements StudentArrayOperation {
 	 * @param length
 	 */
 	public StudentGroup(int length) {
-		
 		this.students = new Student[length];
-		
 	}
 
 	@Override
 	public Student[] getStudents() {
 		// Add your implementation here
-		if(students.length<0 || students==null)
-		{
-			throw new IllegalArgumentException();
-		}
-		else {
+		
 		return students;
-		}
 	}
 
 	@Override
@@ -83,7 +76,7 @@ public class StudentGroup implements StudentArrayOperation {
 		else {
 			
 		}
-		
+		}
 	}
 
 	@Override
